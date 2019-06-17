@@ -43,6 +43,9 @@ https://www.offensive-security.com/metasploit-unleashed/client-side-attacks/
 1. OWASP top10 2017
 https://www.owasp.org/index.php/Top_10-2017_Top_10
 
+2. Training
+https://www.hacksplaining.com/
+
 ### Password Attacks
 1. Hydra
 2. JTR
