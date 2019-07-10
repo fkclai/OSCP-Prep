@@ -1,7 +1,6 @@
 # HTB Access 
 credit https://www.youtube.com/watch?v=Rr6Oxrj2IjU&t=1204s
 
-
 ## Step 1 Recon
 
   #### environment info gethering 
@@ -11,13 +10,13 @@ credit https://www.youtube.com/watch?v=Rr6Oxrj2IjU&t=1204s
 4. Looks for existing or hidden web objects
 gobuster -u http://<ip address> -w /usr/share/wordlists/seclists/discovery/web_content/<check yourself>
   
-  #### file handling
+  #### File handling
 5. unzip/7z to decompress a zip file
 6. exiftool out.jpg
 7. strings out.jpg
 8. file backup.mdb
   
-  #### tools
+  #### Tools
 9. apt search mdbtools
 10. apt-get install <package>
 
@@ -32,7 +31,7 @@ gobuster -u http://<ip address> -w /usr/share/wordlists/seclists/discovery/web_c
 * mdb-tables
 * mdb-ver
 
-#### encripted file handling
+#### Encripted file handling
 9. 7z l -slt encriptedFile.zip
 10. zip2john encriptedFile.zip > encriptedFile.hash
 11. strings -n 8 backup.mdb | sort -u > possibleWordList
