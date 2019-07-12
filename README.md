@@ -36,6 +36,12 @@ https://github.com/fkclai/bufferoverflow
 OSCP like VulnHub Game 
 https://www.abatchy.com/2017/02/oscp-like-vulnhub-vms.html
 
+Window Privilege Escalation via Automated Script
+https://www.hackingarticles.in/window-privilege-escalation-via-automated-script/
+
+Linux
+https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
+
 ### Client Side Attacks
 https://www.offensive-security.com/metasploit-unleashed/client-side-attacks/
 
