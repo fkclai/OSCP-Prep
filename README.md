@@ -47,6 +47,9 @@ https://www.hackingarticles.in/window-privilege-escalation-via-automated-script/
 - Windows Exploit-Suggester
 https://github.com/AonCyberLabs/Windows-Exploit-Suggester
 e.g. HTB Json
+```
+./windows-exploit-suggester.py --database 2019-11-06-mssb.xlsx --systeminfo json-systeminfo.txt 
+```
 
 - Missing software patches - Sherlock
 https://github.com/rasta-mouse/Sherlock
